@@ -1,21 +1,27 @@
-BRICK PROBLEM
+# BRICK PROBLEM
 Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
 
 The program calculates maximum load that can be placed on top of the given wall.
 
 Author: Pawel Flajszer, April 2019
 
+## Requirements:
+
 In order to run the application please install the following modules:
 - re module, version==2.2.1
 - sys module, version==3.7.0
+
+## Usage:
 
 The application takes two command line arguments:
 - the path to the text file formatted as a "wall" in *.txt file with extension included
   (if the file is not located in the same folder as a program make sure to use an absolute path).
 - the initial position to start measuring maximum load for the given wall (index 0 starts at 1 as per specification)
 
-Example usage:  _ _'python application.py wall0.txt 10'_ _
-		_ _'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'_ _
+Example usage:  _'python application.py wall0.txt 10'_
+		_'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'_
+
+## Performance:
 
 The algorithm used is brute force type. It finds every possible pathway from the initial brick to the bottom of the wall.
 Performance: ```O(2^n)```
@@ -62,11 +68,15 @@ For "wall input of 20 rows the profiler returns:
 The performance drops significantly with a larger input. With this in mind, the used algorithm would need to perform
 2^100 main loops for the 100 row input (given in the Bonus Task). That is 1,267,650,600,228,229,401,496,703,205,376, or
 one nonillion, 267 octillion, 650 septillion, 600 sextillion, 228 quintillion, 229 quadrillion, 401 trillion, 496 billion, 703 million, 205 thousand, 376 loops. Needless to say it would be unwise to hold your breath for the runtime.
+**I'm currently working on the better algorithm to solve much larger problems in a reasonable runtime.**
+
+## TODO
 
 Possible improvements:
+- efficiency enhancement (optimise pathway(), or change approach)
 - Increase readability
 - OO approach
-- efficiency enhancement (optimise pathway(), or change approach)
+
 
 Bugs:
 - None
