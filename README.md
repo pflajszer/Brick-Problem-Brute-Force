@@ -14,11 +14,11 @@ The application takes two command line arguments:
   (if the file is not located in the same folder as a program make sure to use an absolute path).
 - the initial position to start measuring maximum load for the given wall (index 0 starts at 1 as per specification)
 
-Example usage:  'python application.py wall0.txt 10'
-		'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'
+Example usage:  _ _'python application.py wall0.txt 10'_ _
+		_ _'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'_ _
 
 The algorithm used is brute force type. It finds every possible pathway from the initial brick to the bottom of the wall.
-Performance: O(2^n)
+Performance: ```O(2^n)```
 
 Profiler used: cProfile.
 
@@ -57,7 +57,7 @@ For "wall input of 20 rows the profiler returns:
            42    0.005    0.000    0.005    0.000 {method 'split' of 're.Pattern' objects}
             1    0.001    0.001    0.001    0.001 {method 'read' of '_io.TextIOWrapper' objects}
 
-application.py:84(pathways) uses the most computing power and should be optimised for larger inputs.
+```application.py:84(pathways)``` uses the most computing power and should be optimised for larger inputs.
 
 The performance drops significantly with a larger input. With this in mind, the used algorithm would need to perform
 2^100 main loops for the 100 row input (given in the Bonus Task). That is 1,267,650,600,228,229,401,496,703,205,376, or
