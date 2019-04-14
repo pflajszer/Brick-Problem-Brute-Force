@@ -1,15 +1,15 @@
 # BRICK PROBLEM
-Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
+> Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
 
 The program calculates maximum load that can be placed on top of the given wall.
 
-Author: Pawel Flajszer, April 2019
+Author: _Pawel Flajszer, April 2019_
 
 ## Requirements:
 
 In order to run the application please install the following modules:
-- re module, version==2.2.1
-- sys module, version==3.7.0
+> - re, version==2.2.1
+> - sys, version==3.7.0
 
 ## Usage:
 
@@ -18,8 +18,11 @@ The application takes two command line arguments:
   (if the file is not located in the same folder as a program make sure to use an absolute path).
 - the initial position to start measuring maximum load for the given wall (index 0 starts at 1 as per specification)
 
-Example usage:  _'python application.py wall0.txt 10'_
-		_'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'_
+Example usage:  
+
+_'python application.py wall0.txt 10'_
+
+_'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'_
 
 ## Performance:
 
@@ -63,10 +66,10 @@ For "wall input of 20 rows the profiler returns:
            42    0.005    0.000    0.005    0.000 {method 'split' of 're.Pattern' objects}
             1    0.001    0.001    0.001    0.001 {method 'read' of '_io.TextIOWrapper' objects}
 
-```application.py:84(pathways)``` uses the most computing power and should be optimised for larger inputs.
+```application.py:84(pathways)``` uses the most computing power and should be optimised for larger inputs.:-1:
 
-The performance drops significantly with a larger input. With this in mind, the used algorithm would need to perform
-2^100 main loops for the 100 row input (given in the Bonus Task). That is 1,267,650,600,228,229,401,496,703,205,376, or
+The performance drops significantly with larger inputs. With this in mind, the used algorithm needs to perform
+2^100 main loops for the 100 row input (given in the _Bonus Task_). That is 1,267,650,600,228,229,401,496,703,205,376, or
 one nonillion, 267 octillion, 650 septillion, 600 sextillion, 228 quintillion, 229 quadrillion, 401 trillion, 496 billion, 703 million, 205 thousand, 376 loops. Needless to say it would be unwise to hold your breath for the runtime.
 **I'm currently working on the better algorithm to solve much larger problems in a reasonable runtime.**
 
@@ -79,7 +82,7 @@ Possible improvements:
 
 
 Bugs:
-- None
+- None :+1:
 
 
  
