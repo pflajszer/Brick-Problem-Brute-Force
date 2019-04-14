@@ -1,5 +1,5 @@
 # BRICK PROBLEM
-> Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
+Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
 
 The program calculates maximum load that can be placed on top of the given wall.
 
@@ -8,30 +8,29 @@ Author: _Pawel Flajszer, April 2019_
 ## Requirements:
 
 In order to run the application please install the following modules:
-> - re, version==2.2.1
-> - sys, version==3.7.0
+- **re**, version==**2.2.1**
+- **sys**, version==**3.7.0**
 
 ## Usage:
 
 The application takes two command line arguments:
-- the path to the text file formatted as a "wall" in *.txt file with extension included
+- the path to the text file formatted as a "wall" in ```*.txt``` file with extension included
   (if the file is not located in the same folder as a program make sure to use an absolute path).
-- the initial position to start measuring maximum load for the given wall (index 0 starts at 1 as per specification)
+- the initial position to start measuring maximum load for the given wall (index ```0``` starts at ```1``` as per specification)
 
 Example usage:  
 
-_'python application.py wall0.txt 10'_
+	Pawels-MacBook-Pro:~ username$ python application.py wall0.txt 10
 
-_'python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20'_
+	Pawels-MacBook-Pro:~ username$ python application.py /Users/Username/Desktop/brick_problem/textfile.txt 20
 
 ## Performance:
 
+Notation: ```O(2^n)```
+
 The algorithm used is brute force type. It finds every possible pathway from the initial brick to the bottom of the wall.
-Performance: ```O(2^n)```
 
-Profiler used: cProfile.
-
-For "wall input of 10 rows the profiler returns:
+For "wall input of 10 rows the cProfile returns:
 
            7171 function calls (7163 primitive calls) in 0.008 seconds
 
@@ -48,7 +47,7 @@ For "wall input of 10 rows the profiler returns:
 
 
 
-For "wall input of 20 rows the profiler returns:
+For "wall input of 20 rows the cProfile returns:
 
 	        12059229 function calls (12059221 primitive calls) in 11.918 seconds
 
