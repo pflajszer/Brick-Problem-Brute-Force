@@ -75,7 +75,7 @@ For "wall" input of 20 rows the cProfile returns:
 one nonillion, 267 octillion, 650 septillion, 600 sextillion, 228 quintillion, 229 quadrillion, 401 trillion, 496 billion, 703 million, 205 thousand, 376 loops. Needless to say it would be unwise to hold your breath for the runtime.
 **I'm currently working on the better algorithm to solve much larger problems in a reasonable runtime.**
 
-## TODO
+## #TODO
 
 Possible improvements:
 - efficiency enhancement (optimise pathway(), or change approach)
