@@ -31,7 +31,7 @@ Example usage:
 The algorithm used is of type brute force. It finds every possible pathway from the initial brick to the bottom of the wall
 by checking every possible combination of every brick through 2 bricks directly below.
 
-For "wall input of 10 rows the cProfile returns:
+For "wall" input of 10 rows the cProfile returns:
 
            7171 function calls (7163 primitive calls) in 0.008 seconds
 
@@ -48,7 +48,7 @@ For "wall input of 10 rows the cProfile returns:
 
 
 
-For "wall input of 20 rows the cProfile returns:
+For "wall" input of 20 rows the cProfile returns:
 
 	        12059229 function calls (12059221 primitive calls) in 11.918 seconds
 
