@@ -1,7 +1,7 @@
 # MAXIMUM LOAD
 :floppy_disk: Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
 
-The program calculates maximum load that can be placed on top of a given wall.
+The program calculates the maximum load that can be placed on top of a given wall.
 
 Author: _Pawel Flajszer, April 2019, pflajszer@gmail.com_ :envelope:
 
@@ -15,7 +15,7 @@ In order to run the application please install the following modules:
 
 The application takes two command line arguments:
 - the path to the text file formatted as a "wall" in ```*.txt``` file with extension included
-  (if the file is not located in the same folder as a program make sure to use an absolute path).
+  (if the file is not located in the same folder as the program make sure to use an absolute path).
 - the initial position to start measuring maximum load for the given wall (index ```0``` starts at ```1``` as per specification)
 
 Example usage:  
