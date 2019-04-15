@@ -3,7 +3,7 @@
 
 The program calculates maximum load that can be placed on top of the given wall.
 
-Author: _Pawel Flajszer, April 2019, pflajszer@gmail.com_
+Author: _Pawel Flajszer, April 2019, pflajszer@gmail.com_ :envelope:
 
 ## Requirements:
 
@@ -26,7 +26,7 @@ Example usage:
 
 ## Performance:
 
-Notation: ```O(2^n)```
+:chart_with_upwards_trend: Notation: ```O(2^n)```
 
 The algorithm used is of type brute force. It finds every possible pathway from the initial brick to the bottom of the wall
 by checking every possible combination of every brick through 2 bricks directly below.
