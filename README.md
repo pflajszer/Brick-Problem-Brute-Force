@@ -1,7 +1,7 @@
 # MAXIMUM LOAD
 :floppy_disk: Created with Python 3.7.0, 64-bit, with Visual Studio Code, MacOS Mojave 10.14.3
 
-The program calculates maximum load that can be placed on top of the given wall.
+The program calculates maximum load that can be placed on top of a given wall.
 
 Author: _Pawel Flajszer, April 2019, pflajszer@gmail.com_ :envelope:
 
