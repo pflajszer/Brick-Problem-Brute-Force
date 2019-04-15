@@ -7,6 +7,8 @@ Author: _Pawel Flajszer, April 2019, pflajszer@gmail.com_ :envelope:
 
 ## Requirements:
 
+- Python3
+
 In order to run the application please install the following modules:
 - **re**, version==**2.2.1**
 - **sys**, version==**3.7.0**
